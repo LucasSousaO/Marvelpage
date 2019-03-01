@@ -1,0 +1,127 @@
+
+body{
+  background-color: lightgray;
+}
+header{
+  width: auto;
+  display: block;
+  height: 100px;
+}
+tbody{
+
+}
+.logo{
+  margin: auto;
+  max-width: auto;
+  max-height: 700px;
+}
+
+.texto-cab{
+  font-style: oblique;
+  color: brown;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cabecalho{
+display: flex;
+}
+.coluna1{
+text-align: center;
+display: block;
+width: 50%;
+}
+.coluna2{
+margin-top: 60px;
+width: 50%;
+height: auto;
+text-align: center;
+}
+
+.title{
+  margin:auto;
+  font-size: 60px;
+  font-style: oblique;
+  display: block;
+  text-align: center;
+}
+
+.teste1{
+display: block;
+text-align: justify;
+font-style: normal;
+color: black;
+text-decoration: none;
+}
+.teste2{
+  text-align:center;
+}
+
+.tabela-completa{
+  font-style: oblique;
+  width: 100%;
+  font-size:35px;
+}
+
+.tabela-cabecalho{
+  height: 40px;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}
+
+.tabela-linhas{
+
+}
+
+.sorteio{
+  color: lightgray;
+  background-color: red;
+}
+
+.question{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  font-size: 40px;
+  margin-top: 5%;
+
+}
+
+.disapear{
+  display: none;
+}
+
+#title{
+  display: inline;
+  font-size: 100px;
+  vertical-align:text-bottom;
+}
+
+#subtitle{
+  display: inline;
+  font-size: 70%;
+  text-align: center;
+  color: brown;
+}
+
+#paragrafo{
+  color: brown;
+  font-style: italic;
+  font-size: 60px;
+  font-family: "lato";
+}
+
+#button{
+  display: block;
+  text-align: center;
+  min-width: 250px;
+  width: auto;
+  margin:auto;
+  height: 100px;
+  font-size: 50px;
+  border-radius: 25px;
+  background-color: red;
+  color: white;
+  font-style: oblique;
+}
