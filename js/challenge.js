@@ -33,7 +33,9 @@ const $quadro4 = $("#box4");
 const $quadro5 = $("#box5");
 const $quadro6 = $("#box6");
 
+$quadro1.find("p").text("novo texto");
 
+//$quadro1.attr("background-image", "url(\"file:///C:/Users/Cristiane/Desktop/Marvelpage-master/img/marvel-logo.png\")");
 
 $botaoPrevious.on("click",() =>{
   offset = offset - 6;
@@ -77,6 +79,12 @@ $quadro4.find("h2").text(list[3].name);
 $quadro5.find("h2").text(list[4].name);
 $quadro6.find("h2").text(list[5].name);
 
+$quadro1.find("p").text(list[0].description);
+$quadro2.find("p").text(list[1].description);
+$quadro3.find("p").text(list[2].description);
+$quadro4.find("p").text(list[3].description);
+$quadro5.find("p").text(list[4].description);
+$quadro6.find("p").text(list[5].description);
 
 
 
