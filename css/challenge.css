@@ -18,6 +18,10 @@ border-bottom: solid orange;
 width: auto;
 }
 
+h3{
+  font-style: normal;
+  
+}
 button{
   font-size: 2rem;
   height: min-content;
@@ -60,6 +64,10 @@ button{
   margin-right: 1rem;
   background-color: #E8E8E8;
   margin-bottom: 2rem;
+
+}
+.comics{
+  display: inline-block;
 }
 .boxContent{
   border: solid #CFCFCF;
