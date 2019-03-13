@@ -35,44 +35,37 @@ button{
   align-self: flex-end;
 }
 img{
-  display:  grid ;
-max-width: 50%;
-max-height: 20%;
-height: 15em;
-width:  inherit;
+display:  flex ;
 opacity: 0.7;
+height: 100%;
+width: 100%;
+position:absolute;
 }
 
 .details{
+
   position: relative;
-  left: -25%;
-  bottom: -1.5rem;
+
 }
 .box{
   display: inline-flex;
   border: solid #CFCFCF;
-  height:auto;
-  min-height: 30em;
   width:31%;
   margin-right: 1rem;
-  background-color: #E8E8E8;
   margin-bottom: 2rem;
   font-style: oblique;
   font-family: lato;
   font-size: 1.2em;
-
+  position: relative;
 }
 .comics{
   display: inline-block;
 }
 .boxContent{
   border: solid #CFCFCF;
-  width: 70%;
-  height: 60%;
+  height: 100%;
   text-align: left;
-  min-width: 500px;
-  min-height: 500px;
-  position: relative;
+  z-index: +1;
 }
 .corpo{
   text-align: center;
