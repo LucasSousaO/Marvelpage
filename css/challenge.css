@@ -36,16 +36,19 @@ button{
 }
 img{
 display:  flex ;
-opacity: 0.7;
+opacity: 0.5;
 height: 100%;
 width: 100%;
 position:absolute;
+z-index: -1;
 }
 
 .details{
-
-  position: relative;
-
+      width: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      left: 50%;
+      bottom: -21px;
 }
 .box{
   display: inline-flex;
@@ -55,17 +58,18 @@ position:absolute;
   margin-bottom: 2rem;
   font-style: oblique;
   font-family: lato;
-  font-size: 1.2em;
+  font-size: 0.6em;
   position: relative;
+  height: 342px;
 }
 .comics{
   display: inline-block;
 }
 .boxContent{
   border: solid #CFCFCF;
-  height: 100%;
+  height: fit-content;
   text-align: left;
-  z-index: +1;
+  width: 60%;
 }
 .corpo{
   text-align: center;
