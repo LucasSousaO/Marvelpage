@@ -13,14 +13,19 @@ font-size: 3rem;
 }
 h2{
   font-size: 2rem;
-color: #363636;
+color: lightgray;
 border-bottom: solid orange;
 width: auto;
 }
 
 h3{
   font-style: normal;
-  
+  color: lightgray;
+}
+h4{
+  display: inline-block;
+ font-style: normal;
+ color: lightgray;
 }
 button{
   font-size: 2rem;
@@ -30,8 +35,12 @@ button{
   background-color: orange;
   color:white;
   font-weight: bold;
-  align-self: flex-end;
-
+  align-items: flex-end;
+  align-content: flex-end;
+  align-self: center;
+  justify-content: end;
+  vertical-align: bottom;
+  position: absolute;
 }
 #buttonPrevious{
   height: auto;
@@ -50,11 +59,11 @@ button{
   position: absolute;
     right: 1em;
 }
+
 .details{
-  position: relative;
-  left: -25%;
   bottom: -1.5rem;
 }
+
 .box{
   display: inline-flex;
   border: solid #CFCFCF;
@@ -69,6 +78,9 @@ button{
 .comics{
   display: inline-block;
 }
+.bodybox{
+  display: inline-flex;
+}
 .boxContent{
   border: solid #CFCFCF;
   width: 70%;
@@ -76,10 +88,17 @@ button{
   text-align: left;
 }
 .corpo{
-  text-align: center;
-
+  text-align: left;
+  display: grid;
+  justify-content: center;
 }
 
 .some{
   display: none;
+}
+
+.photo{
+  opacity: 0.6;
+  position: absolute;
+  height: 100%;
 }
