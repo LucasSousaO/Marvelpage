@@ -24,7 +24,7 @@ axios.get(initialLink+secondLink+'?limit='+limit+'&offset='+offset+'&apikey='+ke
 
 const $botaoPrevious = $('#buttonPrevious');
 const $botaoNext = $('#buttonNext');
-
+let rodapePage =1;
 
 const $quadro1 = $("#box1");
 const $quadro2 = $("#box2");
@@ -32,12 +32,15 @@ const $quadro3 = $("#box3");
 const $quadro4 = $("#box4");
 const $quadro5 = $("#box5");
 const $quadro6 = $("#box6");
+const $rodape = $("#page");
 
 $quadro6.find("p").text("novo texto");
 
 //$quadro1.attr("background-image", "url(\"file:///C:/Users/Cristiane/Desktop/Marvelpage-master/img/marvel-logo.png\")");
 
 $botaoPrevious.on("click",() =>{
+  rodapePage--;
+  $rodape.text(rodapePage);
   offset = offset - 6;
   if(offset <= 0){
     $botaoPrevious.removeClass("btn btn-warning").addClass("some");
@@ -46,6 +49,8 @@ $botaoPrevious.on("click",() =>{
   busca(offset);
 });
 $botaoNext.on("click",() =>{
+  rodapePage++;
+  $rodape.text(rodapePage);
   offset = offset + 6;
   if(offset > 0){
     $botaoPrevious.removeClass("some").addClass("btn btn-warning");

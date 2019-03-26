@@ -1,5 +1,5 @@
 body{
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: white;
   height: auto;
   width: auto;
@@ -11,8 +11,9 @@ border-bottom: solid orange;
 width: auto;
 font-size: 3rem;
 }
+
 h2{
-  font-size: 2rem;
+font-size: 1em;
 color: lightgray;
 border-bottom: solid orange;
 width: auto;
@@ -101,4 +102,12 @@ button{
   opacity: 0.6;
   position: absolute;
   height: 100%;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+    color: gray;
+}
+.pagina{
+  width: 200px;
 }
