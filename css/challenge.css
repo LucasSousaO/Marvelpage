@@ -43,6 +43,9 @@ button{
   vertical-align: bottom;
   position: absolute;
 }
+footer{
+
+}
 #buttonPrevious{
   height: auto;
   width: auto;
@@ -79,19 +82,12 @@ button{
 .comics{
   display: inline-block;
 }
-.bodybox{
-  display: inline-flex;
-}
+
 .boxContent{
   border: solid #CFCFCF;
   width: 70%;
   height: 60%;
   text-align: left;
-}
-.corpo{
-  text-align: left;
-  display: grid;
-  justify-content: center;
 }
 
 .some{
@@ -101,7 +97,12 @@ button{
 .photo{
   opacity: 0.6;
   position: absolute;
+  min-height: 100%;
+  min-width:  100%;
+  left:0px;
+  overflow: hidden;
   height: 100%;
+  width: 100%;
 }
 .footer{
   display: flex;

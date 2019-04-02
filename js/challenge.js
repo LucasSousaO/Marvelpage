@@ -48,34 +48,28 @@ $botaoPrevious.on("click",() =>{
   console.log(offset);
   busca(offset);
 });
+
 $botaoNext.on("click",() =>{
   rodapePage++;
   $rodape.text(rodapePage);
   offset = offset + 6;
   if(offset > 0){
     $botaoPrevious.removeClass("some").addClass("btn btn-warning");
-
   }
   console.log(offset);
   busca(offset);
 });
 
-busca = (offset) => {
-  axios.get(initialLink+secondLink+'?limit='+limit+'&offset='+offset+'&apikey='+key).then(function(response){
-
+  busca = (offset) => {
+    axios.get(initialLink+secondLink+'?limit='+limit+'&offset='+offset+'&apikey='+key).then(function(response){
 
     const list = response.data.data.results;
         console.log(list);
-    atualizaDados(list);
-  });
-};
+        atualizaDados(list);
+    });
+  };
 
 atualizaDados = (list) =>{
-
-  atualizaQuadros (list);
-};
-
-atualizaQuadros = (list) => {
 
 $quadro1.find("h2").text(list[0].name);
 $quadro2.find("h2").text(list[1].name);
@@ -154,6 +148,21 @@ list[4].thumbnail.path.indexOf("not_available") == -1 ? $quadro5.find("img").att
                                                         $quadro5.find("img").attr("src",("img\\marvel-282124.png"));
 list[5].thumbnail.path.indexOf("not_available") == -1 ? $quadro6.find("img").attr("src",(list[5].thumbnail.path +"."+ list[5].thumbnail.extension)):
                                                         $quadro6.find("img").attr("src",("img\\marvel-282124.png"));
+
+let $b1 = $quadro1.find("button").attr("href",list[0].urls[0].url);
+let $b2 = $quadro2.find("button").attr("href",list[1].urls[0].url);
+let $b3 = $quadro3.find("button").attr("href",list[2].urls[0].url);
+let $b4 = $quadro4.find("button").attr("href",list[3].urls[0].url);
+let $b5 = $quadro5.find("button").attr("href",list[4].urls[0].url);
+let $b6 = $quadro6.find("button").attr("href",list[5].urls[0].url);
+
+$b1.on("click", () => {open($b1.attr("href"),"_self");});
+$b2.on("click", () => {open($b2.attr("href"),"_self");});
+$b3.on("click", () => {open($b3.attr("href"),"_self");});
+$b4.on("click", () => {open($b4.attr("href"),"_self");});
+$b5.on("click", () => {open($b5.attr("href"),"_self");});
+$b6.on("click", () => {open($b6.attr("href"),"_self");});
+
 
 };
 
